@@ -1,0 +1,34 @@
+.advantage-card {
+  padding: 48px 32px;
+  background-color: #f3f5f7;
+
+  @include mobile {
+    padding: 32px 16px;
+  }
+}
+
+.advantage-card__img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.advantage-card__description-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #141718;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+.advantage-card__subtitle {
+  font-family: var(--font-accent);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #6c7275;
+}

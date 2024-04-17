@@ -1,0 +1,23 @@
+.logo {
+  font-family: var(--font-accent);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  color: #000;
+
+  & span {
+    color: #141718;
+  }
+}
+
+.logo--footer {
+  font-family: var(--font-accent);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+
+  & span {
+    color: #6c7275;
+  }
+}

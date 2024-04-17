@@ -1,0 +1,65 @@
+.header {
+  background-color: linear-gradient(180deg, #ffc95c 2.18%, #ffc95c 9.71%);
+  height: 820px;
+
+  background-image: url("./../img/bg/header-bg.jpg");
+  @include mediaBg() {
+    background-image: url("./../img/bg/header-bg@2x.jpg");
+  }
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    height: 500px;
+  }
+
+  @include mobile {
+    background-image: url("./../img/bg/bg-mobile.jpg") !important;
+    @include mediaBg() {
+      background-image: url("./../img/bg/bg-mobile@2x.jpg") !important;
+    }
+  }
+}
+
+.header__content {
+  margin-bottom: 28px;
+
+  @include mobile {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto 14px;
+  }
+}
+
+.header__title {
+  & span {
+    color: var(--accent);
+  }
+
+  @include tablet {
+    br {
+      display: none;
+    }
+  }
+}
+
+.header__subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #121212;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.header__button {
+  display: flex;
+
+  @include mobile {
+    align-self: center;
+  }
+}

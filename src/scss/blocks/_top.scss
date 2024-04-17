@@ -1,0 +1,28 @@
+.top {
+  padding: 48px 0 100px;
+
+  @include mobile {
+    padding: 40px 0;
+  }
+}
+
+.top__title {
+  margin-bottom: 48px;
+
+  @include mobile {
+    margin-bottom: 16px;
+  }
+}
+
+.top__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+  row-gap: 48px;
+  column-gap: 24px;
+
+  @include mobile {
+    row-gap: 8px;
+    column-gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}

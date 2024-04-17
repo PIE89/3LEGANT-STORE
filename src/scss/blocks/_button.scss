@@ -1,0 +1,64 @@
+.button {
+  text-wrap: nowrap;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  display: block;
+  width: fit-content;
+
+  border-radius: 8px;
+  padding: 12px 56px;
+  background-color: var(--text-color);
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 178%;
+  letter-spacing: -0.02em;
+  color: var(--page-bg);
+
+  @include tablet {
+    font-size: 15px;
+    padding: 8px 40px;
+  }
+
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--card {
+    padding: 9px 74px;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: -0.03em;
+
+    @include mobile {
+      padding: 6px 60px;
+    }
+  }
+
+  &--card-top {
+    padding: 6px 68px;
+    margin: 0 auto;
+
+    @include mobile {
+      font-size: 13px;
+      padding: 3px 34px;
+    }
+  }
+
+  &--small {
+    padding: 6px 40px;
+    font-size: 16px;
+    line-height: 1.57;
+    letter-spacing: -0.03em;
+  }
+}
+
+.button--mob-nav {
+  text-align: center;
+  width: unset;
+  padding: 10px 0;
+}

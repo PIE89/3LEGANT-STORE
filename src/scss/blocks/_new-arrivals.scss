@@ -1,0 +1,13 @@
+.new-arrivals {
+  padding: 48px 0;
+
+  & > *:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}
+
+.new-arrivals__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

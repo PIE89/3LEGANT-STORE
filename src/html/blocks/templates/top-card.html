@@ -1,0 +1,42 @@
+<article class="top-card">
+  <div class="top-card__img">
+    <img src="./img/products-card/@@img.jpg" alt="@@img" />
+
+    <div class="top-card__img-badge">
+      <span class="top-card__img-badge-icon">@@status</span>
+      <span class="top-card__img-badge-icon top-card__img-badge-icon--green">-50%</span>
+    </div>
+
+    <button class="top-card__img-like">
+      <svg class="icon icon--like">
+        <use href="./img/icons/svgSprite.svg#svg-like"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="top-card__description">
+    <div class="top-card__rate">
+      @@for (let i = 0; i < context.rating; i++) {
+      <img src="./img/products-card/Star.svg" alt="Star" />
+      }
+    </div>
+
+    <h4 class="top-card__title">
+      @@title
+    </h4>
+
+    <span class="top-card__price">
+      @@price
+    </span>
+  </div>
+
+  <div class="top-card__btn">
+    <button class="button button--card-top">Add to cart</button>
+  </div>
+
+  <a
+    href="https://www.youtube.com/watch?v=fg0lm8kOUWQ&t=11657s"
+    target="_blank"
+    class="top-card__link"
+  ></a>
+</article>

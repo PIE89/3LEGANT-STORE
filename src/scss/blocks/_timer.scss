@@ -1,0 +1,45 @@
+.timer {
+  display: grid;
+  gap: 12px;
+}
+
+.timer__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: #141718;
+}
+
+.timer__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.timer__card {
+  display: grid;
+}
+
+.timer__card-count {
+  background-color: #fefefe;
+  width: 60px;
+  height: 60px;
+
+  font-family: var(--font-accent);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer__card-description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.67;
+  text-align: center;
+}

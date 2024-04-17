@@ -1,0 +1,162 @@
+.card {
+  position: relative;
+
+  max-width: 262px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @include mobile {
+    max-width: 231px;
+  }
+
+  &:hover {
+    .card__btn {
+      opacity: 1;
+      transform: translateY(0%);
+      pointer-events: all;
+    }
+
+    .card__img-like {
+      opacity: 1;
+      transform: translateY(0%);
+      pointer-events: all;
+    }
+
+    .card__link {
+      display: block;
+    }
+  }
+}
+
+.card__img {
+  position: relative;
+
+  width: 262px;
+  height: 349px;
+
+  @include mobile {
+    max-width: 231px;
+  }
+}
+
+.card__img-badge {
+  position: absolute;
+
+  top: 16px;
+  left: 16px;
+
+  width: 71px;
+
+  & > *:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.card__img-badge-icon {
+  display: inline-block;
+
+  border-radius: 4px;
+  padding: 4px 14px;
+  background-color: #fff;
+
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #121212;
+
+  &--green {
+    opacity: 0;
+    background-color: #38cb89;
+    color: #fefefe;
+  }
+}
+
+.card__img-like {
+  opacity: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+  position: absolute;
+  z-index: 2;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px -8px rgba(15, 15, 15, 0.5);
+  background-color: #fff;
+
+  top: 10px;
+  right: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    background-color: #ef4782;
+  }
+}
+
+.card__rate {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.card__title {
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 162%;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+.card__price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157%;
+  color: #121212;
+}
+
+.card__btn {
+  position: absolute;
+  z-index: 2;
+
+  width: 88%;
+  left: 16px;
+  top: 287px;
+
+  opacity: 0;
+  transform: translateY(50%);
+
+  pointer-events: none;
+
+  transition: all 0.3s ease-in;
+
+  @include mobile {
+    top: 250px;
+  }
+}
+
+.card__link {
+  content: "";
+  position: absolute;
+  z-index: 1;
+
+  display: none;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

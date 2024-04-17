@@ -1,0 +1,43 @@
+.signup {
+  padding: 101px 0 93px;
+
+  background-color: #f2f4f6;
+  background-image: url("./../img/bg/signup.jpg");
+
+  @include mediaBg() {
+    background-image: url("./../img/bg/signup@2x.jpg");
+  }
+
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    background-image: none !important;
+  }
+
+  @include mobile {
+    padding: 95px 0;
+  }
+}
+
+.signup__wrapper {
+  display: grid;
+  gap: 32px;
+}
+
+.signup__header {
+  text-align: center;
+}
+
+.signup__subtitle {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #121212;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}

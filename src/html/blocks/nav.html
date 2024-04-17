@@ -1,0 +1,45 @@
+<nav class="nav">
+  <div class="container">
+    <div class="nav__row">
+      @@include('elements/mobile-nav.html')
+      <button class="mobile-nav-btn">
+        <div class="nav-icon"></div>
+      </button>
+      @@include('elements/logo.html')
+
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#!" class="nav__link">Home</a></li>
+        <li class="nav__item">
+          <button href="#!" class="nav__link">
+            Shop<img src="./img/icons/arrow-down.svg" alt="arrow-down" />
+          </button>
+        </li>
+        <li class="nav__item">
+          <button href="#!" class="nav__link">
+            Product<img src="./img/icons/arrow-down.svg" alt="arrow-down" />
+          </button>
+        </li>
+        <li class="nav__item">
+          <a href="#!" class="nav__link">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav__icons">
+        <a href="#!" class="nav__icons-links"
+          ><img src="./img/icons/loupe.svg" alt="loupe"
+        /></a>
+        <a href="#!" class="nav__icons-links"
+          ><img src="./img/icons/profile.svg" alt="profile"
+        /></a>
+        <a href="#!" class="nav__icons-links nav__icons-links--bag"
+          ><img src="./img/icons/bag.svg" alt="bag" />
+          <div class="nav__icons-links-count">
+            2
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
